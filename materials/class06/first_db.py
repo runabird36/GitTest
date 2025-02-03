@@ -54,5 +54,5 @@ for _info in input_infos:
 
 print(table)
 
-table.to_excel(excel_writer="C:/dev/test.xlsx", sheet_name="TY")
-table.to_json("C:/dev/test.json")
+# table.to_excel(excel_writer="C:/dev/test.xlsx", sheet_name="TY")
+# table.to_json("C:/dev/test.json")
