@@ -2,6 +2,9 @@
 from PyQt5 import QtWidgets, QtCore
 import sys
 
+# Table
+# TreeWidget
+
 class NamePrintView(QtWidgets.QMainWindow):
     def __init__(self, _parnet=None):
         super(NamePrintView, self).__init__()
@@ -9,10 +12,11 @@ class NamePrintView(QtWidgets.QMainWindow):
         self.setupUi()
 
     def setupUi(self):
-
         self.print_output_lb    = QtWidgets.QLabel()
         self.print_output_lb.setAlignment(QtCore.Qt.AlignCenter)
+
         self.input_le           = QtWidgets.QLineEdit()
+
         self.print_ok_btn       = QtWidgets.QPushButton()
         self.print_ok_btn.setText("나 프린트할래")
         self.print_ok_btn.clicked.connect(self.print_input)
@@ -27,7 +31,6 @@ class NamePrintView(QtWidgets.QMainWindow):
 
         self.setCentralWidget(self.main_wg)
         self.resize(500, 600)
-
 
     def print_input(self):
         input_str = self.input_le.text()
